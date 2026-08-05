@@ -1,38 +1,37 @@
-# Consumer-Insights-Churn-Banc-rio
-
-A análise da nossa carteira revela que o churn geral está em 18% (14.400 clientes). O cliente que cancela apresenta uma idade média de 47 anos, sendo dois anos mais jovem do que quem permanece, enquanto o gênero não demonstrou relevância estatística.
-
-De forma geral, a base apresenta uma carteira considerada de risco baixo e saudável, já que 93% (74.753) dos clientes estão nessa classificação. No entanto, quando cruzamos o churn com o risco, nos deparamos com um dado intrigante: 78% dos clientes que cancelaram estão classificados como risco baixo.
-
-À primeira vista, isso sugeria que o banco estaria perdendo bons clientes de forma inexplicável. Porém, é lógico atestar esse volume sabendo que 93% da carteira geral é saudável — naturalmente, boa parte do churn também viria desse segmento.
-
-O verdadeiro ponto crítico que precisamos destacar é que estamos prospectando clientes qualificados, mas falhamos em retê-los a longo prazo. Acredito que o desafio não está na qualidade da prospecção, mas na incapacidade de engajá-los ativamente.
-
-Ao colocarmos uma lupa nesse grupo dos 78% e observarmos o nível de fidelidade e engajamento, percebemos que a maior parte desse churn de baixo risco (11.130 casos) se concentra nos níveis Bronze de fidelidade e entre membros inativos (especificamente 10.130 clientes no nível Bronze com membro_ativo = false). Ou seja, o cliente não possui um relacionamento estreito com o banco; na verdade, o grupo apresenta uma clara evasão silenciosa, com pouco tempo de relacionamento — inclusive menor do que nos demais segmentos (média de 1,8 anos) — e engajamento baixíssimo com a instituição (média de 16,48), respondendo também por cerca de 70% de todo o churn da carteira.
-
-Perfil Predominante (Bronze e Inativo):
-
-A esmagadora maioria do churn de baixo risco (10.130 clientes) concentra-se no nível Bronze com membro_ativo = false. Esse grupo apresenta um padrão claro de evasão silenciosa: entram com pouco tempo de relacionamento (média de 1,8 anos) e deixam a instituição com baixíssimo engajamento (média de 16,48).
-
-A análise cruzada de produtos e engajamento expõe o verdadeiro antídoto contra o churn: a imersão no ecossistema de serviços. Enquanto os clientes ativos consomem uma média de 3,81 serviços, os que cancelam utilizam apenas 2,44. Esse padrão se reflete diretamente no engajamento (média de 34 para ativos contra 19 nos cancelados) e nas demais métricas de acompanhamento, que consistentemente aparecem mais baixas nos perfis que evadem.
-
-Curiosamente, o tempo de relacionamento se mantém equivalente entre os grupos, provando que o cancelamento não se restringe à fase inicial de casa. Ao direcionarmos a lupa para o perfil Bronze, que concentra 87% da base total, o desafio se torna evidente: esse segmento responde por 97% de todo o churn do banco (14.020 dos 14.400 cancelamentos).
-
-Quando cruzamos esse cenário com o risco, reforçamos a tese anterior: estamos prospectando com alta qualidade, mas falhamos em fazer com que esses clientes evoluam. Como o nível Bronze possui as menores médias de engajamento (18,8 para churns) e de serviços utilizados (2,41), o desafio central passa a ser criar trilhas de desenvolvimento para que o cliente avance para os níveis Silver e Gold, onde o churn é residual.
 
 
+# Diagnóstico de Churn – Consumer Insights
 
-Quando adicionamos à leitura a média de saldo, a renda mensal e o escore de crédito, a diferença de capital se torna expressiva. Os clientes que ficam na instituição tendem a ser muito mais estáveis e possuem saldos substancialmente maiores. Desconsiderando o contexto da moeda, a proporção deixa claro que os clientes que dão churn possuem saldo médio e renda mensal praticamente três vezes menores em comparação aos que continuam ativos. O escore de crédito reflete exatamente a mesma lógica: quem vai embora possui uma pontuação média de 653 pontos, contra 691 dos ativos.
+A análise da carteira revela um **churn geral de 18%**, equivalente a **14.400 clientes**. Em média, os clientes que cancelam possuem **47 anos**, cerca de dois anos mais jovens do que aqueles que permanecem na base, enquanto o gênero não apresentou relevância estatística para explicar o comportamento de evasão.
 
-Ao aprofundarmos essa leitura de capital e escore filtrando especificamente para o perfil Bronze e cruzando por risco, o cenário se torna ainda mais evidente. Observamos que o grande volume da base (76,64% dos clientes, com saldo médio de 6.651.557 e score de 692) permanece ativo no baixo risco (segmento_risco = 0 e churn = 0).
+A carteira é predominantemente saudável: **93% dos clientes são classificados como baixo risco**. Por esse motivo, embora **78% dos cancelamentos também pertençam a esse segmento**, esse resultado não indica, por si só, um problema na classificação de risco, mas sim um reflexo da composição da própria carteira.
 
-No entanto, o ponto de atenção crítico reside nos clientes de baixo risco que evadem (segmento_risco = 0 e churn = 1), que representam 15,79% da base com saldo médio de 2.186.228 e score de 666,7. Já nos grupos classificados com risco mais alto (segmento_risco = 1), tanto os ativos quanto os que cancelam apresentam uma queda progressiva na renda e no escore de crédito (com pontuações médias de 601,9 e 604,6, respectivamente). A conclusão de negócio é que o risco de evasão está fortemente concentrado nos extremos de menor capital e menor escore dentro da base Bronze, reforçando a necessidade de ações direcionadas a esse público..
+O principal insight da análise é que **o banco consegue atrair clientes qualificados, mas encontra dificuldades em desenvolvê-los e retê-los ao longo do relacionamento**. O problema, portanto, não está na aquisição, e sim na construção de engajamento.
 
+Ao analisar os clientes de baixo risco que cancelaram, observa-se que 70% de todo o churn do banco (10.130 clientes) está concentrado em um perfil bastante específico: clientes Bronze, inativos, com baixo engajamento (média de 16,48) e relacionamento relativamente curto (1,8 anos). Esse comportamento caracteriza uma evasão silenciosa, na qual o cliente permanece pouco conectado ao banco até decidir encerrar o relacionamento.
 
-Por fim, olhando o status de membro ativo como principal variável de filtro, a esmagadora maioria dos cancelamentos vem de membros inativos, totalizando 13.283 clientes — o que equivale a 92% de todo o churn. Isso evidencia o poder dos clientes engajados: ser um membro ativo é a melhor vacina contra o cancelamento, já que apenas 1,40% dos que usam o banco com frequência decidem ir embora. Portanto, em vez de gastar energia tentando salvar toda a base de forma genérica, o foco deve ser direcionado a campanhas rápidas para acordar quem está com a conta parada antes que o encerramento aconteça de vez.
+Essa leitura é reforçada quando comparamos os diferentes níveis de fidelidade. Os clientes Bronze apresentam os menores indicadores de relacionamento em toda a carteira: entre os que permanecem ativos, o engajamento médio é de 29,5, enquanto entre os que cancelam cai para 18,8. Além disso, utilizam, em média, apenas 2,41 serviços, contra 3,74 no nível Silver e 4,28 no Gold. Já os clientes Silver e Gold mantêm índices de engajamento significativamente superiores (entre 57 e 73 pontos) e concentram um volume residual de churn. Esses resultados indicam que o risco de evasão diminui à medida que o cliente amplia seu relacionamento com o banco e avança nos níveis de fidelidade.
 
-Para transformar este diagnóstico analítico em execução estratégica, devemos atuar em duas frentes complementares:
+Essa hipótese é reforçada pela análise de utilização dos produtos. Enquanto os clientes ativos utilizam, em média, **3,81 produtos**, os clientes que cancelam utilizam apenas **2,44**. Da mesma forma, o índice médio de engajamento é significativamente maior entre os clientes ativos (**34**) do que entre os que evadem (**19**). Em contrapartida, o tempo médio de relacionamento permanece semelhante entre os grupos, indicando que o churn não ocorre apenas na fase inicial da jornada, mas está mais associado ao baixo uso do ecossistema do banco do que ao tempo de permanência.
 
-Curto Prazo (Reativação de Contas Paradas): Lançar campanhas e gatilhos de engajamento rápidos voltados para os membros inativos da base Bronze, buscando resgatar o vínculo antes que a evasão silenciosa se concretize em encerramento definitivo.
+Quando observamos os níveis de fidelidade, o desafio torna-se ainda mais evidente. Embora o nível **Bronze represente 87% da base**, ele concentra **97% de todos os cancelamentos** (14.020 clientes). Além disso, esse segmento apresenta as menores médias de engajamento e utilização de produtos, indicando que grande parte dos clientes nunca evolui dentro do relacionamento com a instituição.
 
-Médio Prazo (Onboarding no Ecossistema): Estruturar trilhas de desenvolvimento para guiar os novos clientes rumo à adoção de mais soluções (meta de superar o limiar crítico de serviços) e estimular sua progressão para os níveis Silver e Gold, onde a retenção é estruturalmente blindada.
+As variáveis financeiras reforçam essa conclusão. Os clientes que permanecem no banco apresentam saldos médios, renda mensal e escore de crédito substancialmente superiores aos dos clientes que cancelam. Em média, os clientes que evadem possuem aproximadamente **um terço do saldo e da renda** dos clientes ativos, além de um **score médio de crédito inferior (653 contra 691 pontos)**.
+
+Ao restringir a análise ao segmento Bronze, observa-se que a maior parte da carteira permanece ativa no grupo de baixo risco (**76,6% da base**). Entretanto, os clientes de baixo risco que cancelam representam **15,8% da carteira**, apresentando saldo médio e score de crédito significativamente menores que os clientes de mesmo perfil que permanecem ativos. Nos segmentos classificados como maior risco, tanto ativos quanto cancelados apresentam redução adicional de renda e score, indicando que a evasão está fortemente associada aos clientes de menor capital financeiro e menor capacidade de crédito.
+
+O indicador mais relevante da análise, contudo, é o status de atividade da conta. **92% de todos os cancelamentos (13.283 clientes) ocorreram entre membros inativos**, enquanto apenas **1,4% dos clientes ativos encerraram o relacionamento**. Esse resultado demonstra que a utilização recorrente dos serviços é o principal fator de proteção contra o churn. 
+
+## Conclusão
+
+O diagnóstico indica que o desafio estratégico do banco não está em melhorar a aquisição de clientes, mas em acelerar sua evolução dentro do ecossistema. O churn concentra-se em clientes Bronze, inativos, com baixa utilização de produtos, baixo engajamento e menor capacidade financeira. Em outras palavras, trata-se de clientes que foram adquiridos com sucesso, mas que nunca desenvolveram um relacionamento consistente com a instituição.
+
+## Recomendações Estratégicas
+
+**Curto prazo – Reativação de clientes inativos**
+
+Implementar campanhas direcionadas aos clientes Bronze inativos, utilizando gatilhos de comunicação e incentivos para estimular o retorno ao uso da conta antes que a evasão se torne definitiva.
+
+**Médio prazo – Desenvolvimento do relacionamento**
+
+Estruturar jornadas de onboarding e engajamento com foco na ampliação do uso de produtos e serviços, incentivando a evolução dos clientes Bronze para os níveis Silver e Gold, segmentos nos quais o churn é significativamente menor. O objetivo é aumentar a integração do cliente ao ecossistema do banco, fortalecendo sua retenção no longo prazo.
