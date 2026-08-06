@@ -40,16 +40,13 @@ Esse resultado reforça que a localização geográfica não é o principal fato
 
 Esse achado fortalece os insights obtidos nas análises anteriores: o perfil de maior risco é composto por clientes Mass, Bronze, inativos, com baixo engajamento e baixa utilização de produtos, sugerindo que a principal oportunidade está em estratégias de ativação e aumento do uso do ecossistema bancário, e não em ações regionalizadas.
 
-## Conclusão
+##Conclusão
+O diagnóstico aponta que o desafio estratégico do banco não está em melhorar a aquisição de clientes, mas em acelerar sua evolução dentro do ecossistema. O churn concentra-se em clientes Bronze, inativos, com baixa utilização de produtos, baixo engajamento e menor capacidade financeira. Em outras palavras, trata-se de clientes que foram adquiridos com sucesso, mas que nunca desenvolveram um relacionamento consistente com a instituição.
 
-O diagnóstico indica que o desafio estratégico do banco não está em melhorar a aquisição de clientes, mas em acelerar sua evolução dentro do ecossistema. O churn concentra-se em clientes Bronze, inativos, com baixa utilização de produtos, baixo engajamento e menor capacidade financeira. Em outras palavras, trata-se de clientes que foram adquiridos com sucesso, mas que nunca desenvolveram um relacionamento consistente com a instituição.
+Temos a oportunidade de mover o ponteiro com ações cirúrgicas e de baixo esforço para gerar grandes resultados. Ao atuar em recortes específicos trazidos por esta análise para sanar a evasão invisível de clientes qualificados que abandonam o banco por falta de vínculo, precisamos compreender profundamente esse relacionamento e estreitá-lo.
 
-## Recomendações Estratégicas
-
-**Curto prazo – Reativação de clientes inativos**
-
+##Recomendações Estratégicas
+Curto prazo – Reativação de clientes inativos
 Implementar campanhas direcionadas aos clientes Bronze inativos, utilizando gatilhos de comunicação e incentivos para estimular o retorno ao uso da conta antes que a evasão se torne definitiva.
-
-**Médio prazo – Desenvolvimento do relacionamento**
-
+Médio prazo – Desenvolvimento do relacionamento
 Estruturar jornadas de onboarding e engajamento com foco na ampliação do uso de produtos e serviços, incentivando a evolução dos clientes Bronze para os níveis Silver e Gold, segmentos nos quais o churn é significativamente menor. O objetivo é aumentar a integração do cliente ao ecossistema do banco, fortalecendo sua retenção no longo prazo.
