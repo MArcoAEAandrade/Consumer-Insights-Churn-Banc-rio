@@ -1,5 +1,3 @@
-
-
 # Diagnóstico de Churn – Consumer Insights
 
 A análise da carteira revela um **churn geral de 18%**, equivalente a **14.400 clientes**. Em média, os clientes que cancelam possuem **47 anos**, cerca de dois anos mais jovens do que aqueles que permanecem na base, enquanto o gênero não apresentou relevância estatística para explicar o comportamento de evasão.
@@ -20,7 +18,9 @@ As variáveis financeiras reforçam essa conclusão. Os clientes que permanecem 
 
 Ao restringir a análise ao segmento Bronze, observa-se que a maior parte da carteira permanece ativa no grupo de baixo risco (**76,6% da base**). Entretanto, os clientes de baixo risco que cancelam representam **15,8% da carteira**, apresentando saldo médio e score de crédito significativamente menores que os clientes de mesmo perfil que permanecem ativos. Nos segmentos classificados como maior risco, tanto ativos quanto cancelados apresentam redução adicional de renda e score, indicando que a evasão está fortemente associada aos clientes de menor capital financeiro e menor capacidade de crédito.
 
-O indicador mais relevante da análise, contudo, é o status de atividade da conta. **92% de todos os cancelamentos (13.283 clientes) ocorreram entre membros inativos**, enquanto apenas **1,4% dos clientes ativos encerraram o relacionamento**. Esse resultado demonstra que a utilização recorrente dos serviços é o principal fator de proteção contra o churn. 
+O indicador mais relevante da análise, contudo, é o status de atividade da conta. **92% de todos os cancelamentos (13.283 clientes) ocorreram entre membros inativos**, enquanto apenas **1,4% dos clientes ativos encerraram o relacionamento**. Esse resultado demonstra que a utilização recorrente dos serviços é o principal fator de proteção contra o churn.
+
+Além disso, o aprofundamento comportamental e de produtos demonstra que **o grupo que evadem possui uma média menor de cartões (2,31 contra 2,61 dos ativos)**, reforçando a carência de produtos secundários de ancoragem. No recorte digital do nível Bronze, **22,51% dos clientes offline encerram o relacionamento**, em contraste com apenas **7,63% dos usuários mobile**, evidenciando que a ausência de adoção e transação digital atua como um forte vetor de risco para a evasão.
 
 Quem é o cliente Bronze?
 
@@ -40,13 +40,15 @@ Esse resultado reforça que a localização geográfica não é o principal fato
 
 Esse achado fortalece os insights obtidos nas análises anteriores: o perfil de maior risco é composto por clientes Mass, Bronze, inativos, com baixo engajamento e baixa utilização de produtos, sugerindo que a principal oportunidade está em estratégias de ativação e aumento do uso do ecossistema bancário, e não em ações regionalizadas.
 
-##Conclusão
+## Conclusão
+
 O diagnóstico aponta que o desafio estratégico do banco não está em melhorar a aquisição de clientes, mas em acelerar sua evolução dentro do ecossistema. O churn concentra-se em clientes Bronze, inativos, com baixa utilização de produtos, baixo engajamento e menor capacidade financeira. Em outras palavras, trata-se de clientes que foram adquiridos com sucesso, mas que nunca desenvolveram um relacionamento consistente com a instituição.
 
 Temos a oportunidade de mover o ponteiro com ações cirúrgicas e de baixo esforço para gerar grandes resultados. Ao atuar em recortes específicos trazidos por esta análise para sanar a evasão invisível de clientes qualificados que abandonam o banco por falta de vínculo, precisamos compreender profundamente esse relacionamento e estreitá-lo.
 
-##Recomendações Estratégicas
-Curto prazo – Reativação de clientes inativos
-Implementar campanhas direcionadas aos clientes Bronze inativos, utilizando gatilhos de comunicação e incentivos para estimular o retorno ao uso da conta antes que a evasão se torne definitiva.
-Médio prazo – Desenvolvimento do relacionamento
-Estruturar jornadas de onboarding e engajamento com foco na ampliação do uso de produtos e serviços, incentivando a evolução dos clientes Bronze para os níveis Silver e Gold, segmentos nos quais o churn é significativamente menor. O objetivo é aumentar a integração do cliente ao ecossistema do banco, fortalecendo sua retenção no longo prazo.
+## Recomendações Estratégicas
+
+Curto prazo – Reativação e migração digital de clientes inativos/offline
+Implementar campanhas direcionadas especificamente aos clientes Bronze inativos e de perfil offline, utilizando canais alternativos, gatilhos de comunicação e incentivos voltados à ativação do primeiro acesso ao aplicativo e retorno ao uso da conta antes que a evasão se torne definitiva.
+Médio prazo – Desenvolvimento do relacionamento e ancoragem de produtos
+Estruturar jornadas de onboarding e engajamento com foco na ampliação do uso de produtos e serviços (como a adoção de cartões e novos serviços), incentivando a evolução dos clientes Bronze para os níveis Silver e Gold, segmentos nos quais o churn é significativamente menor. O objetivo é aumentar a integração do cliente ao ecossistema do banco, fortalecendo sua retenção no longo prazo.
