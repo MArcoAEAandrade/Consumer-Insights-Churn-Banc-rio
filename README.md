@@ -1,3 +1,5 @@
+<img width="828" height="369" alt="image" src="https://github.com/user-attachments/assets/4787c282-913a-448a-b19b-2abe4c1edb34" />
+
 # Diagnóstico de Churn – Consumer Insights
 
 A análise da carteira revela um **churn geral de 18%**, equivalente a **14.400 clientes**. Em média, os clientes que cancelam possuem **47 anos**, cerca de dois anos mais jovens do que aqueles que permanecem na base, enquanto o gênero não apresentou relevância estatística para explicar o comportamento de evasão.
@@ -49,3 +51,8 @@ Temos a oportunidade de mover o ponteiro com ações cirúrgicas e de baixo esfo
 
 * **Curto prazo – Reativação e migração digital de clientes inativos/offline:** Implementar campanhas direcionadas especificamente aos clientes Bronze inativos e de perfil offline, utilizando canais alternativos, gatilhos de comunicação e incentivos voltados à ativação do primeiro acesso ao aplicativo e retorno ao uso da conta antes que a evasão se torne definitiva.
 * **Médio prazo – Desenvolvimento do relacionamento e ancoragem de produtos:** Estruturar jornadas de *onboarding* e engajamento com foco na ampliação do uso de produtos e serviços (como a adoção de cartões e novos serviços), incentivando a evolução dos clientes Bronze para os níveis Silver e Gold, segmentos nos quais o churn é significativamente menor. O objetivo é aumentar a integração do cliente ao ecossistema do banco, fortalecendo sua retenção no longo prazo.
+
+* ## Status do projeto:  
+| Projeto | Status | Tecs Usadas |
+| :--- | :--- | :--- |
+| 📊 **[PPT_Diagnóstico Churn](https://canva.link/xifcba6630oaklr)**, **[Dashboard.py](http://localhost:8503/)**| Andamento `Python`, `SQL`, `Cloud` |
