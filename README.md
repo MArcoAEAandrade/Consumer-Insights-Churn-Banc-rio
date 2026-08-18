@@ -55,4 +55,4 @@ Temos a oportunidade de mover o ponteiro com ações cirúrgicas e de baixo esfo
 * ## Status do projeto:  
 | Projeto | Status | Tecs Usadas |
 | :--- | :--- | :--- |
-| 📊 **[PPT_Diagnóstico Churn](https://canva.link/xifcba6630oaklr)**, **[Dashboard.py](http://localhost:8503/)**| Andamento `Python`, `SQL`, `Cloud` |
+| 📊 **[PPT_Diagnóstico Churn](https://canva.link/xifcba6630oaklr)**, **[Dashboard.py](http://localhost:8503/)**| Andamento |`Python`, `SQL`, `Cloud` 
