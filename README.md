@@ -52,6 +52,8 @@ Temos a oportunidade de mover o ponteiro com ações cirúrgicas e de baixo esfo
 * **Curto prazo – Reativação e migração digital de clientes inativos/offline:** Implementar campanhas direcionadas especificamente aos clientes Bronze inativos e de perfil offline, utilizando canais alternativos, gatilhos de comunicação e incentivos voltados à ativação do primeiro acesso ao aplicativo e retorno ao uso da conta antes que a evasão se torne definitiva.
 * **Médio prazo – Desenvolvimento do relacionamento e ancoragem de produtos:** Estruturar jornadas de *onboarding* e engajamento com foco na ampliação do uso de produtos e serviços (como a adoção de cartões e novos serviços), incentivando a evolução dos clientes Bronze para os níveis Silver e Gold, segmentos nos quais o churn é significativamente menor. O objetivo é aumentar a integração do cliente ao ecossistema do banco, fortalecendo sua retenção no longo prazo.
 
+Para rodar o Dash, adicionar ao terminal: STREAMLIT RUN APPY.PY
+
 * ## Status do projeto:  
 | Projeto | Status | Tecs Usadas |
 | :--- | :--- | :--- |
